@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build C++",
+            "type": "shell",
+            "command": "/usr/bin/g++", // Adjust this to your compiler path (e.g., g++ on Linux/Mac, or MinGW on Windows)
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/app" // Output executable file named "app"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task by VS Code."
+        }
+    ]
+}
